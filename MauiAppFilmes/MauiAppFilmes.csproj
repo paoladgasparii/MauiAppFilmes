@@ -57,6 +57,54 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\007.jpg" />
+	  <None Remove="Resources\Images\300.jpg" />
+	  <None Remove="Resources\Images\annabelle.jpg" />
+	  <None Remove="Resources\Images\aproposta.jpg" />
+	  <None Remove="Resources\Images\asbranquelas.jpg" />
+	  <None Remove="Resources\Images\autodacompadecida.jpg" />
+	  <None Remove="Resources\Images\avatar.jpg" />
+	  <None Remove="Resources\Images\barbie.jpg" />
+	  <None Remove="Resources\Images\batman.jpg" />
+	  <None Remove="Resources\Images\belaeafera.jpg" />
+	  <None Remove="Resources\Images\centraldobrasil.jpg" />
+	  <None Remove="Resources\Images\CidadedeDeus.jpg" />
+	  <None Remove="Resources\Images\enrolados.jpg" />
+	  <None Remove="Resources\Images\esposadementirinha.jpg" />
+	  <None Remove="Resources\Images\exorcismo.jpg" />
+	  <None Remove="Resources\Images\extraordinario.jpg" />
+	  <None Remove="Resources\Images\fabrica.jpg" />
+	  <None Remove="Resources\Images\folklore.jpg" />
+	  <None Remove="Resources\Images\gentegrande.jpg" />
+	  <None Remove="Resources\Images\guardioesdagalaxia.jpg" />
+	  <None Remove="Resources\Images\hobbit.jpg" />
+	  <None Remove="Resources\Images\homemaranha.jpg" />
+	  <None Remove="Resources\Images\hp.jpg" />
+	  <None Remove="Resources\Images\hp20.jpg" />
+	  <None Remove="Resources\Images\inocacao.jpg" />
+	  <None Remove="Resources\Images\lilostitch.jpg" />
+	  <None Remove="Resources\Images\meupassado.jpg" />
+	  <None Remove="Resources\Images\minhamae.jpg" />
+	  <None Remove="Resources\Images\missamericana.jpg" />
+	  <None Remove="Resources\Images\missao.jpg" />
+	  <None Remove="Resources\Images\narnia.jpg" />
+	  <None Remove="Resources\Images\orfa.jpg" />
+	  <None Remove="Resources\Images\pearlharbor.jpg" />
+	  <None Remove="Resources\Images\pijamalistrado.jpg" />
+	  <None Remove="Resources\Images\piratasdocaribe.jpg" />
+	  <None Remove="Resources\Images\poderosochefao.jpg" />
+	  <None Remove="Resources\Images\princesaeosapo.jpg" />
+	  <None Remove="Resources\Images\reileao.jpg" />
+	  <None Remove="Resources\Images\senna.jpg" />
+	  <None Remove="Resources\Images\starwars.jpg" />
+	  <None Remove="Resources\Images\titanic.jpg" />
+	  <None Remove="Resources\Images\todosmenosvoce.jpg" />
+	  <None Remove="Resources\Images\tropa.jpg" />
+	  <None Remove="Resources\Images\ultimato.jpg" />
+	  <None Remove="Resources\Images\ultimohomem.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
