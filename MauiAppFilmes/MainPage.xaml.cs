@@ -1,4 +1,6 @@
-﻿namespace MauiAppFilmes
+﻿using MauiAppFilmes.Categorias;
+
+namespace MauiAppFilmes
 {
     public partial class MainPage : ContentPage
     {
@@ -9,9 +11,17 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                Navigation.PushAsync(new Aventura());
 
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK");
+            }
         }
     }
 

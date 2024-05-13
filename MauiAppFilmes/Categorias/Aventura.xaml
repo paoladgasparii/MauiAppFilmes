@@ -10,12 +10,21 @@
                   ColumnDefinitions="*, *"
                   Padding="5">
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0"
-                             Source="" x:Name="btn"
-                             Clicked="btn" />
+                             Source="hobbit.jpg" x:Name="Hobbit"
+                             Clicked="btnhobbit_Clicked" />
 
-                <ImageButton Grid.Column="1" Grid.Row="0" Source="" x:Name="btn" />
-                <ImageButton Grid.Column="0" Grid.Row="1" Source="" x:Name="btn" />
-                <ImageButton Grid.Column="1" Grid.Row="1" Source="" x:Name="btn" />
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="0" 
+                             Source="homemaranha.jpg" x:Name="Homemaranha" 
+                             Clicked="btnhomemaranha_Clicked"/>
+                
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1" 
+                             Source="hp.jpg" x:Name="Hp" 
+                             Clicked="btnhp_Clicked"/>
+                
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="1" 
+                             Source="piratasdocaribe.jpg" x:Name="Piratasdocaribe" 
+                             Clicked="btnpiratasdocaribe_Clicked"/>
+                
             </Grid>
         </ScrollView>
     </VerticalStackLayout>

@@ -57,8 +57,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\007.jpg" />
-	  <None Remove="Resources\Images\300.jpg" />
 	  <None Remove="Resources\Images\annabelle.jpg" />
 	  <None Remove="Resources\Images\aproposta.jpg" />
 	  <None Remove="Resources\Images\asbranquelas.jpg" />
@@ -68,7 +66,7 @@
 	  <None Remove="Resources\Images\batman.jpg" />
 	  <None Remove="Resources\Images\belaeafera.jpg" />
 	  <None Remove="Resources\Images\centraldobrasil.jpg" />
-	  <None Remove="Resources\Images\CidadedeDeus.jpg" />
+	  <None Remove="Resources\Images\cidadededeus.jpg" />
 	  <None Remove="Resources\Images\enrolados.jpg" />
 	  <None Remove="Resources\Images\esposadementirinha.jpg" />
 	  <None Remove="Resources\Images\exorcismo.jpg" />
@@ -99,9 +97,11 @@
 	  <None Remove="Resources\Images\starwars.jpg" />
 	  <None Remove="Resources\Images\titanic.jpg" />
 	  <None Remove="Resources\Images\todosmenosvoce.jpg" />
+	  <None Remove="Resources\Images\trezentos.jpg" />
 	  <None Remove="Resources\Images\tropa.jpg" />
 	  <None Remove="Resources\Images\ultimato.jpg" />
 	  <None Remove="Resources\Images\ultimohomem.jpg" />
+	  <None Remove="Resources\Images\zerozerosete.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -112,6 +112,18 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Categorias\Aventura.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Hobbit.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Homemaranha.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Hp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Piratasdocaribe.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
