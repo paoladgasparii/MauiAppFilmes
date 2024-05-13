@@ -11,7 +11,7 @@ namespace MauiAppFilmes
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void BtnAventura_Clicked(object sender, EventArgs e)
         {
             try
             {
