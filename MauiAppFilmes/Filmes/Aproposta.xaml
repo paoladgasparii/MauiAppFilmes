@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Aproposta"
+             Title="A Proposta"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/dbYST9QhCYY?si=I47TYmcytJQKAcyh" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="aproposta.jpg" x:Name="aproposta" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="10 de julho de 2009" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Anne Fletcher" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Sandra Bullock, Ryan Reynolds, Betty White" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopseaproposta" Text="Em A Proposta, Margaret Tate (Sandra Bullock) é uma poderosa editora de livros, que se vê em apuros ao ser comunicada de sua deportação para o país-natal, o Canadá. Para evitar que isto ocorra ela declara estar noiva de Andrew Paxton (Ryan Reynolds), seu assistente. Perseguido por Margaret há anos, ele aceita participar da farsa mas impõe algumas condições."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

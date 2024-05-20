@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFilmes.Filmes.Hobbit"
-             Title="Hobbit"
+             x:Class="MauiAppFilmes.Filmes.Asbranquelas"
+             Title="As Branquelas"
              BackgroundColor="Black">
     <Grid RowDefinitions="*, *" ColumnDefinitions="*">
 
@@ -11,7 +11,7 @@
 
         <ScrollView Grid.Row="1" Grid.Column="0">
             <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
-                <Image Grid.Column="0" Grid.Row="0" Source="hobbit.jpg" x:Name="posterhobbit" WidthRequest="150" HeightRequest="250" />
+                <Image Grid.Column="0" Grid.Row="0" Source="asbranquelas.jpg" x:Name="asbranquelas" WidthRequest="150" HeightRequest="250" />
                 <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
                     <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
                     <Label Text="14 de dezembro de 2012" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
@@ -25,7 +25,7 @@
 
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
                     <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
-                    <Label x:Name="sinopsehobbit" Text="O Hobbit: Uma Jornada Inesperada acompanha Bilbo Bolseiro (Martin Freeman) que vive uma vida pacata no condado, como a maioria dos hobbits. Um dia, aparece em sua porta o mago Gandalf, o cinzento (Ian McKellen), que lhe promete uma aventura como nunca antes vista. Na companhia de vários anões, Bilbo e Gandalf iniciam sua jornada inesperada pela Terra Média. Eles têm por objetivo libertar o reino de Erebor, conquistado há tempos pelo dragão Smaug e que antes pertencia aos anões. No meio do caminho encontram elfos, trolls e, é claro, a criatura Gollum (Andy Serkis) e seu precioso anel."
+                    <Label x:Name="sinopseaproposta" Text="O Hobbit: Uma Jornada Inesperada acompanha Bilbo Bolseiro (Martin Freeman) que vive uma vida pacata no condado, como a maioria dos hobbits. Um dia, aparece em sua porta o mago Gandalf, o cinzento (Ian McKellen), que lhe promete uma aventura como nunca antes vista. Na companhia de vários anões, Bilbo e Gandalf iniciam sua jornada inesperada pela Terra Média. Eles têm por objetivo libertar o reino de Erebor, conquistado há tempos pelo dragão Smaug e que antes pertencia aos anões. No meio do caminho encontram elfos, trolls e, é claro, a criatura Gollum (Andy Serkis) e seu precioso anel."
                                FontSize="15" Padding="10" TextColor="White"/>
 
                 </StackLayout>

@@ -23,6 +23,19 @@ namespace MauiAppFilmes
                 DisplayAlert("Ops", ex.Message, "OK");
             }
         }
+
+        private void BtnComedia_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new Comedia());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK");
+            }
+        }
     }
 
 }

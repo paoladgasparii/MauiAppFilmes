@@ -2,11 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppFilmes.Filmes.Piratasdocaribe"
-             Title="Piratasdocaribe">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Piratas do Caribe"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/haenBC_xPnc?si=QhhHATrTnh4zyqNT" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="piratasdocaribe.jpg" x:Name="piratasdocaribe" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="20 de maio de 2011" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Rob Marshall" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Johnny Depp, Penélope Cruz, Geoffrey Rush" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsepiratas" Text="O capitão Jack Sparrow (Johnny Depp) vai até Londres para resgatar Gibbs (Kevin McNally), integrante de sua tripulação no Pérola Negra. Lá ele descobre que alguém está usando seu nome para conseguir marujos em uma viagem rumo à Fonte da Juventude. Sparrow investiga e logo percebe que Angelica (Penélope Cruz), um antigo caso que balançou seu coração, é a responsável pela farsa. Ela é filha do lendário pirata Barba Negra (Ian McShane), que está com os dias contados. Desta forma, Angelica quer encontrar a Fonte da Juventude para que seu pai tenha mais alguns anos de vida. No encalço deles está o capitão Barbossa (Geoffrey Rush), que agora trabalha para o império britânico."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
 </ContentPage>

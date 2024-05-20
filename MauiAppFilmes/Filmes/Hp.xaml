@@ -2,11 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppFilmes.Filmes.Hp"
-             Title="Hp">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Harry Potter"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/XS3fRKaapKY?si=SuuGy-qudZzKZwko" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="hp.jpg" x:Name="hp" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="15 de julho de 2011" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="David Yates " Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Daniel Radcliffe, Rupert Grint, Emma Watson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+                
+                
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsehp" Text="Em Harry Potter e as Relíquias da Morte - Parte 2, Harry Potter (Daniel Radcliffe) e seus amigos Rony Weasley (Rupert Grint) e Hermione Granger (Emma Watson) seguem à procura das horcruxes. O objetivo do trio é encontrá-las e, em seguida, destruí-las, de forma a eliminar lorde Voldemort (Ralph Fiennes) de uma vez por todas. Com a ajuda do duende Grampo (Warwick Davis), eles entram no banco Gringotes de forma a invadir o cofre de Bellatrix Lestrange (Helena Bonham Carter). De lá retornam ao castelo de Hogwarts, onde precisam encontrar mais uma horcrux. Paralelamente, Voldemort prepara o ataque definitivo ao castelo."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
 </ContentPage>

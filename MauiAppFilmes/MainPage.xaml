@@ -31,7 +31,7 @@
         <Button x:Name="btn40" Grid.Row="4" Grid.Column="0" Text="DOCUMENTÁRIO"/>
         <Button x:Name="btn50" Grid.Row="5" Grid.Column="0" Text="NACIONAL"/>
 
-        <Button x:Name="btn01" Grid.Row="0" Grid.Column="1" Text="COMÉDIA"/>
+        <Button x:Name="btn01" Grid.Row="0" Grid.Column="1" Text="COMÉDIA" Clicked="BtnComedia_Clicked"/>
         <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Text="TERROR"/>
         <Button x:Name="btn21" Grid.Row="2" Grid.Column="1" Text="SUSPENSE"/>
         <Button x:Name="btn31" Grid.Row="3" Grid.Column="1" Text="ANIMAÇÃO"/>

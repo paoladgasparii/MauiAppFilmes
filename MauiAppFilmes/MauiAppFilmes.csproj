@@ -66,7 +66,7 @@
 	  <None Remove="Resources\Images\batman.jpg" />
 	  <None Remove="Resources\Images\belaeafera.jpg" />
 	  <None Remove="Resources\Images\centraldobrasil.jpg" />
-	  <None Remove="Resources\Images\cidadededeus.jpg" />
+	  <None Remove="Resources\Images\cidadedeus.jpg" />
 	  <None Remove="Resources\Images\enrolados.jpg" />
 	  <None Remove="Resources\Images\esposadementirinha.jpg" />
 	  <None Remove="Resources\Images\exorcismo.jpg" />
@@ -112,6 +112,21 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Categorias\Aventura.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\Comedia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Aproposta.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Asbranquelas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Esposadementirinha.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Filmes\Gentegrande.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Filmes\Hobbit.xaml">
