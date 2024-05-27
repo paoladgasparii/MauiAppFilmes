@@ -7,25 +7,25 @@
     <Grid RowDefinitions="*, *" ColumnDefinitions="*">
 
         <WebView Grid.Column="0" Grid.Row="0" 
-                     Source="https://www.youtube.com/embed/4AKkpnCKa2I?si=aBdPNZx-LQzoWrwU" WidthRequest="350" HeightRequest="250"/>
+                     Source="https://www.youtube.com/embed/QmL1mdzS544?si=4dhHUhXpBCcmfEeY" WidthRequest="350" HeightRequest="250"/>
 
         <ScrollView Grid.Row="1" Grid.Column="0">
             <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
                 <Image Grid.Column="0" Grid.Row="0" Source="esposadementirinha.jpg" x:Name="esposadementirinha" WidthRequest="150" HeightRequest="250" />
                 <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
                     <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="14 de dezembro de 2012" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+                    <Label Text="4 de março de 2011" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
 
                     <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Peter Jackson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Dennis Dugan" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
 
                     <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Ian McKellen, Martin Freeman, Richard Armitage" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Adam Sandler, Jennifer Aniston, Brooklyn Decker" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
                 </StackLayout>
 
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
                     <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
-                    <Label x:Name="sinopseaproposta" Text="O Hobbit: Uma Jornada Inesperada acompanha Bilbo Bolseiro (Martin Freeman) que vive uma vida pacata no condado, como a maioria dos hobbits. Um dia, aparece em sua porta o mago Gandalf, o cinzento (Ian McKellen), que lhe promete uma aventura como nunca antes vista. Na companhia de vários anões, Bilbo e Gandalf iniciam sua jornada inesperada pela Terra Média. Eles têm por objetivo libertar o reino de Erebor, conquistado há tempos pelo dragão Smaug e que antes pertencia aos anões. No meio do caminho encontram elfos, trolls e, é claro, a criatura Gollum (Andy Serkis) e seu precioso anel."
+                    <Label x:Name="sinopseaproposta" Text="Danny Maccabee (Adam Sandler) queria um relacionamento sério, mas foi infeliz em sua tentativa de casamento. Para driblar a carência, passa a vivenciar somente namoricos e transas sem o menor compromisso. Assim, ele toca sua vida como cirurgião plástico bem sucedido, tendo sua melhor amiga Katherine (Jennifer Aniston), mãe solteira de um casal de pirralhos, como fiel escudeira. Mas um dia ele conhece a jovem Palmer (Brooklyn Decker) e a paixão toma conta de ambos. Disposto a se casar com ela, Danny pisa na bola quando, para conquistá-la, inventa que é marido da amiga, pai das crianças e que vai se separar. Começa então uma verdadeira aventura amorosa recheada de confusões de todos os tipos."
                                FontSize="15" Padding="10" TextColor="White"/>
 
                 </StackLayout>

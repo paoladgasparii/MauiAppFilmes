@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Extraordinario"
+             Title="Extraordinário"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/7lyJtY_TPvk?si=S2tkBt_kZF0JTqVD" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="extraordinario.jpg" x:Name="extraordinario" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="7 de dezembro de 2017" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Stephen Chbosky" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Julia Roberts, Jacob Tremblay, Owen Wilson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopseextraordinario" Text="Auggie Pullman (Jacob Tremblay) é um garoto que nasceu com uma deformação facial, o que fez com que passasse por 27 cirurgias plásticas. Aos 10 anos, ele pela primeira vez frequentará uma escola regular, como qualquer outra criança. Lá, precisa lidar com a sensação constante de ser sempre observado e avaliado por todos à sua volta."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

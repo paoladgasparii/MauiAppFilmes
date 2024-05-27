@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Titanic"
+             Title="Titanic"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/IH6_CA_ocqY?si=UKEBnmc7TkQ1hUcH" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="titanic.jpg" x:Name="titanic" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="16 de janeiro de 1998" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="James Cameron" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Leonardo DiCaprio, Kate Winslet, Billy Zane" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsetitanic" Text="Jack Dawson (Leonardo DiCaprio) é um jovem aventureiro que, na mesa de jogo, ganha uma passagem para a primeira viagem do transatlântico Titanic. Trata-se de um luxuoso e imponente navio, anunciado na época como inafundável, que parte para os Estados Unidos. Nele está também Rose DeWitt Bukater (Kate Winslet), a jovem noiva de Caledon Hockley (Billy Zane). Rose está descontente com sua vida, já que sente-se sufocada pelos costumes da elite e não ama Caledon. Entretanto, ela precisa se casar com ele para manter o bom nome da família, que está falida. Um dia, desesperada, Rose ameaça se atirar do Titanic, mas Jack consegue demovê-la da ideia. Pelo ato ele é convidado a jantar na primeira classe, onde começa a se tornar mais próximo de Rose. Logo eles se apaixonam, despertando a fúria de Caledon. A situação fica ainda mais complicada quando o Titanic se choca com um iceberg, provocando algo que ninguém imaginava ser possível: o naufrágio do navio"
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

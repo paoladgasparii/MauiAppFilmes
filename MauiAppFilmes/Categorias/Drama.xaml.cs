@@ -1,16 +1,17 @@
 namespace MauiAppFilmes.Categorias;
 
-public partial class Comedia : ContentPage
+public partial class Drama : ContentPage
 {
-    public Comedia()
+    public Drama()
     {
         InitializeComponent();
     }
-    private void btnasbranquelas_Clicked(object sender, EventArgs e)
+
+    private void btncidadededeus_Clicked(object sender, EventArgs e)
     {
         try
         {
-            Navigation.PushAsync(new Filmes.Asbranquelas());
+            Navigation.PushAsync(new Filmes.Cidadededeus());
 
         }
         catch (Exception ex)
@@ -19,11 +20,11 @@ public partial class Comedia : ContentPage
         }
     }
 
-    private void btngentegrande_Clicked(object sender, EventArgs e)
+    private void btntitanic_Clicked(object sender, EventArgs e)
     {
         try
         {
-            Navigation.PushAsync(new Filmes.Gentegrande());
+            Navigation.PushAsync(new Filmes.Titanic());
 
         }
         catch (Exception ex)
@@ -32,11 +33,11 @@ public partial class Comedia : ContentPage
         }
     }
 
-    private void btnesposadementirinha_Clicked(object sender, EventArgs e)
+    private void btnextraordinario_Clicked(object sender, EventArgs e)
     {
         try
         {
-            Navigation.PushAsync(new Filmes.Esposadementirinha());
+            Navigation.PushAsync(new Filmes.Extraordinario());
 
         }
         catch (Exception ex)
@@ -45,17 +46,16 @@ public partial class Comedia : ContentPage
         }
     }
 
-    private void btnaproposta_Clicked(object sender, EventArgs e)
+    private void btnpoderosochefao_Clicked(object sender, EventArgs e)
     {
         try
         {
-            Navigation.PushAsync(new Filmes.Aproposta());
+            Navigation.PushAsync(new Filmes.Poderosochefao());
 
         }
         catch (Exception ex)
         {
             DisplayAlert("Ops", ex.Message, "OK");
         }
-
     }
 }

@@ -25,7 +25,7 @@
           VerticalOptions="FillAndExpand" Padding="3">
 
         <Button x:Name="btn00" Grid.Row="0" Grid.Column="0" Text="AVENTURA" Clicked="BtnAventura_Clicked"/>
-        <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Text="DRAMA"/>
+        <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Text="DRAMA" Clicked="BtnDrama_Clicked"/>
         <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Text="FICÇÃO CIENTÍFICA"/>
         <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Text="INFANTIL"/>
         <Button x:Name="btn40" Grid.Row="4" Grid.Column="0" Text="DOCUMENTÁRIO"/>

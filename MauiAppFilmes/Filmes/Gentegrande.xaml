@@ -7,25 +7,25 @@
     <Grid RowDefinitions="*, *" ColumnDefinitions="*">
 
         <WebView Grid.Column="0" Grid.Row="0" 
-                     Source="https://www.youtube.com/embed/4AKkpnCKa2I?si=aBdPNZx-LQzoWrwU" WidthRequest="350" HeightRequest="250"/>
+                     Source="https://www.youtube.com/embed/HKVve_VSz58?si=pRW6gV5oIA8xOfyw" WidthRequest="350" HeightRequest="250"/>
 
         <ScrollView Grid.Row="1" Grid.Column="0">
             <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
                 <Image Grid.Column="0" Grid.Row="0" Source="gentegrande.jpg" x:Name="gentegrande" WidthRequest="150" HeightRequest="250" />
                 <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
                     <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="14 de dezembro de 2012" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+                    <Label Text="24 de setembro de 2010" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
 
                     <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Peter Jackson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Dennis Dugan" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
 
                     <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Ian McKellen, Martin Freeman, Richard Armitage" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Adam Sandler, Kevin James, Chris Rock" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
                 </StackLayout>
 
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
                     <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
-                    <Label x:Name="sinopseaproposta" Text="O Hobbit: Uma Jornada Inesperada acompanha Bilbo Bolseiro (Martin Freeman) que vive uma vida pacata no condado, como a maioria dos hobbits. Um dia, aparece em sua porta o mago Gandalf, o cinzento (Ian McKellen), que lhe promete uma aventura como nunca antes vista. Na companhia de vários anões, Bilbo e Gandalf iniciam sua jornada inesperada pela Terra Média. Eles têm por objetivo libertar o reino de Erebor, conquistado há tempos pelo dragão Smaug e que antes pertencia aos anões. No meio do caminho encontram elfos, trolls e, é claro, a criatura Gollum (Andy Serkis) e seu precioso anel."
+                    <Label x:Name="sinopseaproposta" Text="Em Gente Grande, Lenny (Adam Sandler), Kurt (Chris Rock), Eric (Kevin James), Marcus (David Spade) e Rob (Rob Schneider) se conhecem desde pequenos. Passados trinta anos, os cinco amigos se reencontram para curtir um fim de semana juntos com as respectivas famílias, mas o feriado de 4 de Julho em uma casa no lago promete muito mais diversão do que apenas lembranças dos bons momentos. Casados e com várias crianças, os homens de família terão de confrontar o fato de não serem mais tão jovens."
                                FontSize="15" Padding="10" TextColor="White"/>
 
                 </StackLayout>
