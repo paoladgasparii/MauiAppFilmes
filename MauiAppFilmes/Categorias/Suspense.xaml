@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFilmes.Categorias.Comedia"
-             Title="Comédia"
+             x:Class="MauiAppFilmes.Categorias.Suspense"
+             Title="Suspense"
              BackgroundColor="#2f2f30">
     <VerticalStackLayout>
         <ScrollView>
@@ -11,20 +11,20 @@
                   Padding="5">
 
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" 
-                             Source="asbranquelas.jpg" x:Name="Asbranquelas" 
-                             Clicked="btnasbranquelas_Clicked"/>
+                             Source="batman.jpg" x:Name="Batman" 
+                             Clicked="btnbatman_Clicked"/>
 
                 <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="0"
-                             Source="gentegrande.jpg" x:Name="Gentegrande"
-                             Clicked="btngentegrande_Clicked" />
+                             Source="missao.jpg" x:Name="Missao"
+                             Clicked="btnmissao_Clicked" />
 
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1" 
-                             Source="esposadementirinha.jpg" x:Name="Esposadementirinha" 
-                             Clicked="btnesposadementirinha_Clicked"/>
+                             Source="tropa.jpg" x:Name="Tropa" 
+                             Clicked="btntropa_Clicked"/>
 
                 <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="1" 
-                             Source="aproposta.jpg" x:Name="Aproposta" 
-                             Clicked="btnaproposta_Clicked"/>
+                             Source="zerozerosete.jpg" x:Name="Zerozerosete" 
+                             Clicked="btnzerozerosete_Clicked"/>
 
             </Grid>
         </ScrollView>

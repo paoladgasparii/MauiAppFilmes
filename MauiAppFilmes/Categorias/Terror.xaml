@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFilmes.Categorias.Comedia"
-             Title="Comédia"
+             x:Class="MauiAppFilmes.Categorias.Terror"
+             Title="Terror"
              BackgroundColor="#2f2f30">
     <VerticalStackLayout>
         <ScrollView>
@@ -11,20 +10,20 @@
                   Padding="5">
 
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" 
-                             Source="asbranquelas.jpg" x:Name="Asbranquelas" 
-                             Clicked="btnasbranquelas_Clicked"/>
+                             Source="annabelle.jpg" x:Name="Annabelle" 
+                             Clicked="btnannabelle_Clicked"/>
 
                 <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="0"
-                             Source="gentegrande.jpg" x:Name="Gentegrande"
-                             Clicked="btngentegrande_Clicked" />
+                             Source="exorcismo.jpg" x:Name="Exorcismo"
+                             Clicked="btnexorcismo_Clicked" />
 
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1" 
-                             Source="esposadementirinha.jpg" x:Name="Esposadementirinha" 
-                             Clicked="btnesposadementirinha_Clicked"/>
+                             Source="orfa.jpg" x:Name="Aorfa" 
+                             Clicked="btnorfa_Clicked"/>
 
                 <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="1" 
-                             Source="aproposta.jpg" x:Name="Aproposta" 
-                             Clicked="btnaproposta_Clicked"/>
+                             Source="inocacao.jpg" x:Name="Invocacao" 
+                             Clicked="btninvocacaodomal_Clicked"/>
 
             </Grid>
         </ScrollView>

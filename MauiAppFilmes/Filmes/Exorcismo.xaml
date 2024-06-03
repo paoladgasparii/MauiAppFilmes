@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Exorcismo"
+             Title="O Exorcismo de Emily Rose"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/qxYe9X24CdM?si=ywl-4i88SP8aGn7e" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="exorcismo.jpg" x:Name="exorcismo" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="2 de dezembro de 2005" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Scott Derrickson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Laura Linney, Tom Wilkinson, Campbell Scott" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopseexorcismo" Text="Emily Rose (Jennifer Carpenter) é uma jovem que deixou sua casa em uma região rural para cursar a faculdade. Um dia, sozinha em seu quarto no alojamento, ela tem uma alucinação assustadora, perdendo a consciência logo em seguida. Como seus surtos ficam cada vez mais frequentes, Emily, que é católica praticante, aceita ser submetida a uma sessão de exorcismo. Quem realiza a sessão é o sacerdote de sua paróquia, o padre Richard Moore (Tom Wilkinson). Porém Emily morre durante o exorcismo, o que faz com que o padre seja acusado de assassinato. Erin Bruner (Laura Linney), uma advogada famosa, aceita pegar a defesa do padre Moore em troca da garantia de sociedade em uma banca de advocacia. À medida que o processo transcorre o cinismo e o ateísmo de Erin são desafiados pela fé do padre Moore e também pelos eventos inexplicáveis em torno do caso"
+                               FontSize="15" Padding="10" TextColor="White"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
