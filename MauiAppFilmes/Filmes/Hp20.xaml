@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Hp20"
+             Title="Harry Potter - 20 Anos de Magia: De Volta a Hogwarts"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/iDBzRtnCmBc?si=iTFd5Hlf-EWUjBie" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="hp20.jpg" x:Name="hp20" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="1 de janeiro de 2022" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Daniel Radcliffe, Emma Watson, Rupert Grint" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsehp20" Text="Harry Potter - 20 Anos de Magia: De Volta a Hogwarts é um evento especial de 20 anos em comemoração ao lançamento de Harry Potter e a Pedra Filosofal (2001) e todos os outros filmes da franquia do bruxo. Daniel Radcliff, Emma Watson, Rupert Grint e muitos outros se reunem para discutir sobre o que se passou por trás das câmeras de gravação no estúdio. O elenco todo dos filmes foram chamados para falar sobre suas experiências, momentos marcantes, amizades com colegas atores, curiosidades e histórias que serão contadas ao público pela primeira vez e como a franquia do Menino que sobreviveu marcou cada um deles desde crianças. Cenários do primeiro filme foram montados mais uma vez para que todos possam revisitar a escola de magia Howgwarts, a vila local Hogsmeade, a cabana de Hagrid e outros locais marcantes do primeiro filme, assim como os vilões mais amados dos filmes."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

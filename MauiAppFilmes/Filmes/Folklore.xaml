@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFilmes.Filmes.Missao"
-             Title="Missão Impossível"
+             x:Class="MauiAppFilmes.Filmes.Folklore"
+             Title="Taylor Swift: Folklore"
              BackgroundColor="Black">
 
     <Grid RowDefinitions="*, *" ColumnDefinitions="*">
         <WebView Grid.Column="0" Grid.Row="0" 
-                     Source="https://www.youtube.com/embed/Bu21yEXZhMc?si=TQxKSMa3oXV4isOp" WidthRequest="350" HeightRequest="250"/>
+                     Source="https://www.youtube.com/embed/ubK30MxDfxM?si=D8-ZHF4BQKsbmtix" WidthRequest="350" HeightRequest="250"/>
 
         <ScrollView Grid.Row="1" Grid.Column="0">
             <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
-                <Image Grid.Column="0" Grid.Row="0" Source="missao.jpg" x:Name="missao" WidthRequest="150" HeightRequest="250" />
+                <Image Grid.Column="0" Grid.Row="0" Source="folklore.jpg" x:Name="folklore" WidthRequest="150" HeightRequest="250" />
                 <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
                     <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="23 de dezembro de 2011" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+                    <Label Text="27 de outubro de 2021" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
 
                     <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Brad Bird" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Taylor Swift" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
 
                     <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Tom Cruise, Jeremy Renner, Simon Pegg" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Taylor Swift, Aaron Dessner, Jack Antonoff" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
                 </StackLayout>
 
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
                     <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
-                    <Label x:Name="sinopsemissao" Text="O agente secreto Ethan Hunt (Tom Cruise) é desautorizado pelo presidente dos Estados Unidos após o país ser acusado por um bombardeio no Kremlin. Tem início o Protocolo Fantasma, que visa acabar com os agentes da IMF. Sem qualquer recurso ou apoio, Ethan precisa encontrar um meio de limpar seu nome e o da agência em que trabalha. Para tanto passa a trabalhar com Benji (Simon Pegg) e Jane (Paula Patton), agentes renegados como ele, e ainda Brandt (Jeremy Renner), um ex-agente que agora trabalha como analista."
+                    <Label x:Name="sinopsefolklore" Text="Em Folklore - Sessões no Long Pond Studio, Taylor Swift apresenta cada música na ordem de seu álbum, Folklore, e revela as histórias e segredos por trás de todas as 17 músicas."
                                FontSize="15" Padding="10" TextColor="White"/>
 
                 </StackLayout>

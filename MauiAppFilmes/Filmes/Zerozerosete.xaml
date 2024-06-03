@@ -2,11 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppFilmes.Filmes.Zerozerosete"
-             Title="Zerozerosete">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="007"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/rf55HmGA-oo?si=qYlOVaOZzQkczRnc" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="zerozerosete.jpg" x:Name="zerozerosete" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="26 de outubro de 2012" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Sam Mendes" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Daniel Craig, Judi Dench, Javier Bardem" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsezero" Text="O roubo de um HD contendo informações valiosas sobre a identidade de diversos agentes, infiltrados em células terroristas espalhadas ao redor do planeta, faz com que James Bond (Daniel Craig) parta atrás do ladrão. A perseguição segue pelas ruas de uma cidade na Turquia e acaba em cima de um trem. Precisando impedir que a peça seja levada, M (Judi Dench) ordena que a agente Eve (Naomi Harris) dispare, mesmo sabendo que o tiro pode atingir Bond. É o que acontece, fazendo com que o agente 007 despenque de uma altura incrível. Considerado morto, Bond passa a levar uma vida como fantasma até assistir, pela TV, o ataque terrorista sofrido pelo MI6 em plena Londres. Disposto a mais uma vez defender seu país, ele retorna à capital inglesa e se reapresenta a M, mesmo guardando uma certa mágoa dela por ter ordenado o disparo. Logo eles descobrem que o responsável pelo roubo e o atentado é alguém que conhece muito bem o modo de funcionamento do MI6."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
 </ContentPage>

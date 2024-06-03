@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFilmes.MainPage">
+             x:Class="MauiAppFilmes.MainPage"
+             Title="Categorias">
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
@@ -28,8 +29,8 @@
         <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Text="DRAMA" Clicked="BtnDrama_Clicked"/>
         <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Text="FICÇÃO CIENTÍFICA" Clicked="BtnFiccao_Clicked"/>
         <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Text="INFANTIL"/>
-        <Button x:Name="btn40" Grid.Row="4" Grid.Column="0" Text="DOCUMENTÁRIO"/>
-        <Button x:Name="btn50" Grid.Row="5" Grid.Column="0" Text="NACIONAL"/>
+        <Button x:Name="btn40" Grid.Row="4" Grid.Column="0" Text="DOCUMENTÁRIO" Clicked="BtnDocumentario_Clicked"/>
+        <Button x:Name="btn50" Grid.Row="5" Grid.Column="0" Text="NACIONAL" Clicked="BtnNacional_Clicked"/>
 
         <Button x:Name="btn01" Grid.Row="0" Grid.Column="1" Text="COMÉDIA" Clicked="BtnComedia_Clicked"/>
         <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Text="TERROR" Clicked="BtnTerror_Clicked"/>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Categorias.Documentario"
+             Title="Documentario"
+             BackgroundColor="#2f2f30">
+    <VerticalStackLayout>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*, *"
+                  Padding="5">
+
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" 
+                             Source="missamericana.jpg" x:Name="Missamericana" 
+                             Clicked="btnmissamericana_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="0"
+                             Source="hp20.jpg" x:Name="Hp20"
+                             Clicked="btnhp_Clicked" />
+
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1" 
+                             Source="senna.jpg" x:Name="Senna" 
+                             Clicked="btnsenna_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="1" 
+                             Source="folklore.jpg" x:Name="Folklore" 
+                             Clicked="btnfolklore_Clicked"/>
+
+            </Grid>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
