@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Comoperder"
+             Title="Como Perder Um Homem em 10 Dias"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/3IDeifYOCvM?si=hOMw6APuQj6qjuPH" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="comoperder.jpg" x:Name="comoperder" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="25 de abril de 2003" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Donald Petrie " Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Kate Hudson, Matthew McConaughey, Adam Goldberg" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsecomoperder" Text="Ben Barry (Matthew McConaughey) é um publicitário que faz uma grande aposta com seu chefe: caso faça com que uma mulher se apaixone por ele em 10 dias ele será o responsável por uma concorrida campanha de diamantes que pertence à empresa. A vítima escolhida por Ben é Andie Anderson (Kate Hudson), uma jornalista feminista que está desenvolvendo uma matéria sobre como perder um homem em 10 dias e está decidida a infernizar a vida de qualquer homem que se aproximar dela. Ambos se conhecem em um bar, sendo que escolhem um ao outro como alvo de seus planos."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

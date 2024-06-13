@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Liloestitch"
+             Title="Lilo e Stitch"
+    BackgroundColor="Black">
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+                <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                    <Image Grid.Column="0" Grid.Row="0" Source="lilostitch.jpg" x:Name="lilostitch" WidthRequest="150" HeightRequest="250" />
+                    <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                        <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="28 de junho de 2002" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                        <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Dean DeBlois, Chris Sanders" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                        <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Daveigh Chase, Chris Sanders, Tia Carrere" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                        <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopselilostitch" Text="Lilo (Daveigh Chase) é uma pequena garota havaiana de 5 anos que adora cuidar de animais menos favorecidos e vive com sua irmã Nani (Tia Carrere). Lilo tem o costume de coletar lixo reciclável nas praias para, com o dinheiro recebido, comprar comida para peixes e nadar até o alto-mar para alimentá-los. Até que, num belo dia, ela encontra um cachorro e decide adotá-lo. Entretanto, este cachorro na verdade é Stitch (Chris Sanders), um ser alienígena que é um dos criminosos mais perigosos da galáxia. Stitch foi preso em um planeta distante pela polícia interplanetária, mas ao ser encaminhado para um planeta-prisão consegue escapar, caindo acidentalmente na Terra. Agora, para escapar da polícia que ainda o persegue, Stitch esconde quatro de suas seis pernas e decide se fazer passar por um cachorro comum, desenvolvendo com o tempo um laço de amizade com Lilo."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage>

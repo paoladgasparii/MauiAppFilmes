@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Aprincesaeosapo"
+             Title="A Princesa e o Sapo"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="princesaeosapo.jpg" x:Name="aprincesaeosapo" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="11 de dezembro de 2009" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Ron Clements, John Musker" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Anika Noni Rose, Bruno Campos, Keith David" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopseaprincesaeosapo" Text="Tiana (Anika Noni Rose) é uma bela jovem que vive em Nova Orleans. Desde criança ela sonha em ter um restaurante próprio, o que faz com que tenha dois empregos e junte o máximo de dinheiro possível. Para conseguir a quantia necessária para que possa enfim alugar o imóvel de seus sonhos, ela aceita trabalhar na festa realizada por Charlotte LaBouff (Jennifer Cody), sua amiga de infância. Charlotte deseja conquistar o príncipe Naveen (Bruno Campos), que acaba de chegar à cidade. Entretanto, um incidente faz com que Tiana troque de roupa e, no quarto de Charlotte, use um de seus vestidos. É quando surge um sapo, anunciando ser um príncipe e pedindo a Tiana que lhe conceda um beijo, para que o feitiço nele aplicado seja quebrado. De início Tiana acha a ideia repugnante, mas aceita ao receber a promessa do príncipe de que conseguirá para ela a quantia necessária para concretizar o aluguel. Só que, ao beijá-lo, ao invés dele se tornar humano novamente, é Tiana quem se transforma em sapo."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Paratodososgarotos"
+             Title="Para Todos os Garotos que já Amei"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/CK-g0OqzQHQ?si=uJRDoejqVgHEDaKB" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="paratodos.jpg" x:Name="paratodos" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="8 de abril de 2020" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Susan Johnson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Lana Condor, Noah Centineo, John Corbett" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopseparatodos" Text="Baseado no romance de Jenny Han, Para Todos os Garotos que Já Amei segue as aventuras amorosas de Lara Jean (Lana Condor). No ensino médio, Lara tem um hábito de escrever cartas para todos os garotos que já gostou de alguma forma, de modo que ela possa liberar o amor não correspondido ou que nunca foi falado para a pessoa. Todas as cartas que já escreveu são guardadas em uma caixa. Um dia sua irmã mais nova acha as cartas e decide mandar para todos os destinatários, afim de ajudar a irmã a ser correspondida por um deles ou apenas receber uma mensagem. Na manhã seguinte, Lara é confrontada por Peter Kavinsky (Noah Centineo), que recebeu uma de suas cartas, mas se não fosse só ele, Josh e Lucas também vão falar com ela. Em um momento de desespero ela beija Peter para despistar um dos garotos. Ciente que suas cartas foram mandadas, Lara entra em pânico, mas Peter percebe que sua ex-namorada começou a ficar com ciúmes dele. Então ele decide fazer um pacto com Lara para que eles forjem um namoro para que Peter volte com sua ex. Mas será que o amor dos dois vai florescer em meio de mentirinhas?"
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilmes.Filmes.Narnia"
+             Title="As Crônicas de Nárnia"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                     Source="https://www.youtube.com/embed/hLC3l4gnq0c?si=xzOc7EL5hrMbOUFc" WidthRequest="350" HeightRequest="250"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" Source="narnia.jpg" x:Name="folklore" WidthRequest="150" HeightRequest="250" />
+                <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="9 de dezembro de 2005" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Andrew Adamson" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+
+                    <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    <Label Text="Georgie Henley, Skandar Keynes, Anna Popplewell" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
+                    <Label x:Name="sinopsenarnia" Text="Lúcia (Georgie Henley), Susana (Anna Popplewell), Edmundo (Skandar Keynes) e Pedro (William Moseley) são quatro irmãos que vivem na Inglaterra, em plena 2ª Guerra Mundial. Eles vivem na propriedade rural de um professor misterioso, onde costumam brincar de esconde-esconde. Em uma de suas brincadeiras eles descobrem um guarda-roupa mágico, que leva quem o atravessa ao mundo mágico de Nárnia. Este novo mundo é habitado por seres estranhos, como centauros e gigantes, que já foi pacífico mas hoje vive sob a maldição da Feiticeira Branca, Jadis (Tilda Swinton), que fez com que o local sempre estivesse em um pesado inverno. Sob a orientação do leão Aslam, que governa Nárnia, as crianças decidem ajudar na luta para libertar este mundo do domínio de Jadis."
+                               FontSize="15" Padding="10" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

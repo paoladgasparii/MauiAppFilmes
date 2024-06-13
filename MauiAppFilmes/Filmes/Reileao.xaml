@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFilmes.Filmes.Autodacompadecida"
-             Title="Auto da Compadecida"
+             x:Class="MauiAppFilmes.Filmes.Reileao"
+             Title="O Rei Leão"
              BackgroundColor="Black">
-    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
 
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
         <WebView Grid.Column="0" Grid.Row="0" 
-                     Source="https://www.youtube.com/embed/YroEX9bx0fM?si=8X31mckTV1KrwGnn" WidthRequest="350" HeightRequest="250"/>
+                     Source="https://www.youtube.com/embed/ZSD6LVpRi-k?si=RopOZIbXpzY3wi8i" WidthRequest="350" HeightRequest="250"/>
 
         <ScrollView Grid.Row="1" Grid.Column="0">
             <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
-                <Image Grid.Column="0" Grid.Row="0" Source="autodacompadecida.jpg" x:Name="autodacompadecida" WidthRequest="150" HeightRequest="250" />
+                <Image Grid.Column="0" Grid.Row="0" Source="reileao.jpg" x:Name="folklore" WidthRequest="150" HeightRequest="250" />
                 <StackLayout VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0">
                     <Label Text="Data de Lançamento" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="10 de setembro de 2000" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
+                    <Label Text="18 de julho de 2019" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White"/>
 
                     <Label Text="Direção" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="16" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Guel Arraes" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Jon Favreau" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
 
                     <Label Text="Elenco" Margin="0, 20, 0, 0" Style="{StaticResource titulo}" FontSize="15" FontAttributes="Bold" TextColor="White"/>
-                    <Label Text="Matheus Nachtergaele, Selton Mello, Denise Fraga" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
+                    <Label Text="Ícaro Silva, Donald Glover, Beyoncé Knowles-Carter" Style="{StaticResource textoTitulo}" FontSize="14" TextColor="White" />
                 </StackLayout>
 
                 <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
                     <Label Text="Sinopse" Style="{StaticResource titulo}" FontSize="16" Padding="15" HeightRequest="40" FontAttributes="Bold" TextColor="White"/>
-                    <Label x:Name="sinopseauto" Text="As aventuras dos nordestinos João Grilo (Matheus Natchergaele), um sertanejo pobre e mentiroso, e Chicó (Selton Mello), o mais covarde dos homens. Ambos lutam pelo pão de cada dia e atravessam por vários episódios enganando a todos do pequeno vilarejo de Taperoá, no sertão da Paraíba. A salvação da dupla acontece com a aparição da Nossa Senhora (Fernanda Montenegro). Adaptação da obra de Ariano Suassuna."
+                    <Label x:Name="sinopsereileao" Text="Live action do clássico da Disney, em O Rei Leão, Simba (Donald Glover) é um jovem leão cujo destino é se tornar o rei da selva. Entretanto, uma armadilha elaborada por seu tio Scar (Chiwetel Ejiofor) faz com que Mufasa (James Earl Jones), o atual rei, morra ao tentar salvar o filhote. Consumido pela culpa, Simba deixa o reino rumo a um local distante, onde encontra amigos que o ensinam a mais uma vez ter prazer pela vida."
                                FontSize="15" Padding="10" TextColor="White"/>
 
                 </StackLayout>
